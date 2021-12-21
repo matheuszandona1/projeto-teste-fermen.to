@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@700&family=Tinos:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.container-total {
+  overflow-x: hidden;
+}
+.container {
+  width: 400vw;
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 500ms ease-in-out;
+}
+.container .pagina {
+  width: 100vw;
+}
+.fundo-geral {
+  background-color: #d44522;
+  background-image: url("../img/fundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  overflow: hidden;
+}
+
+.fundo-geral .detalhe1 {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  mix-blend-mode: screen;
+}
+
+.fundo-geral .detalhe2 {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: -35vh;
+  top: 0;
+  display: block;
+  mix-blend-mode: screen;
+  transform: scaleX(-1);
+}
+.fundo-geral .detalhe3 {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: -15vw;
+  top: 0;
+  display: block;
+  mix-blend-mode: screen;
+}
+.fundo-geral .renas2 {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  display: block;
+  transform: scaleX(-1);
+  opacity: 0.8;
+}
+
+.capao {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.capao .conteudo {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.capao .conteudo h1 {
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  letter-spacing: 0.68px;
+}
+.capao .conteudo h2 {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Tinos", serif;
+  line-height: 30px;
+}
+.capao .conteudo h2 b {
+  color: #f3c127;
+}
+.capao .conteudo .iniciar {
+  width: 280px;
+  display: flex;
+  height: 60px;
+  border: solid 1px #fff;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: relative;
+}
+.capao .conteudo .iniciar::after {
+  content: "";
+  background-color: #f3c127;
+  height: 3px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.capao .conteudo .iniciar .icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60px;
+  border-radius: 8px 0 0 8px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+.capao .conteudo .iniciar .texto {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 250ms ease-in-out;
+  border-radius: 0 8px 8px 0;
+}
+.capao .conteudo .iniciar:hover .texto {
+  background-color: #fff;
+  color: #d44522;
+}
+
+.capao .conteudo .logo {
+  width: 250px;
+  display: block;
+}
+.capao .conteudo .logo img {
+  display: block;
+  width: 100%;
+}
+
+.capao .conteudo .esquerda {
+  width: 50%;
+  display: block;
+}
+
+.opcoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.opcoes .conteudo {
+  width: 100%;
+  max-width: 960px;
+  display: block;
+  margin: auto;
+}
+.opcoes .conteudo .topo {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.opcoes .conteudo .itens {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.opcoes .conteudo .itens .item {
+  width: 24%;
+  text-decoration: none;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 400px;
+  position: relative;
+  box-shadow: inset 0px 0px 0px 6px transparent;
+  transition: all 250ms;
+}
+
+.itens a {
+  content: "";
+  border: 2px solid #a13f3f;
+}
+.opcoes .conteudo .itens .item:hover {
+  box-shadow: inset 0px 0px 0px 6px #f3c127;
+}
+.opcoes .conteudo .itens .item::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-color: #d44522;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+}
+
+.opcoes .conteudo .itens .item .texto {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-80px, -50%);
+  z-index: 2;
+}
+
+.opcoes .conteudo .itens .item .texto .info {
+  font-family: "Tinos", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.opcoes .conteudo .itens .item .texto .nome {
+  font-family: "Tinos", serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: block;
+  font-family: "DM Serif Display", serif;
+}
+
+.opcoes .conteudo .titulo {
+  margin-top: 50px;
+  font-family: "Tinos", serif;
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  font-family: "DM Serif Display", serif;
+}
+
+.opcoes .conteudo .logo {
+  width: 250px;
+  display: block;
+  margin-top: 50px;
+}
+.opcoes .conteudo .logo img {
+  display: block;
+  width: 100%;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.formulario .conteudo {
+  width: 100%;
+  max-width: 960px;
+  display: block;
+  margin: auto;
+}
+
+.formulario .conteudo form .campos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.formulario .conteudo form .campos .campo {
+  width: 48%;
+  margin-top: 20px;
+}
+
+.formulario .conteudo form .campos .campo.full {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.formulario .conteudo form .campos .campo textarea {
+  font-family: "Poppins";
+  border: solid 1px #fff;
+  background-color: #d44522;
+  color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  height: 70px;
+}
+
+.formulario .conteudo form .campos .campo .titulo {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.formulario .conteudo form .campos .campo {
+  display: block;
+  margin-top: 15px;
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+}
+
+.formulario .conteudo form .campos .campo .titulo b {
+  color: #f3c127;
+}
+
+.formulario .conteudo form .campos .campo input {
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  font-family: "Poppins", sans-serif;
+  background-color: #d44522;
+  color: #fff;
+  transition: all 250ms;
+}
+
+.formulario .conteudo form .botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.formulario .conteudo form .gerar {
+  width: 350px;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px;
+  background-color: #f3c127;
+  border: solid 1px #f3c127;
+  display: block;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+.formulario .conteudo form .gerar::after {
+  content: "";
+  background-color: #fff;
+  height: 3px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.formulario .conteudo form .voltar {
+  width: 350px;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px;
+  background-color: #f3c127;
+  border: solid 1px #f3c127;
+  display: block;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+.formulario .conteudo form .voltar::after {
+  content: "";
+  background-color: #fff;
+  height: 3px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formulario .conteudo form .botoes a:hover {
+  background-color: #fff;
+  color: #d44522;
+}
+.formulario .conteudo form .botoes a {
+  transition: all 250ms ease-in-out;
+}
+
+.resultado a {
+  text-decoration: none;
+}
+.resultado {
+  display: block;
+  margin: 100px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.resultado .conteudo {
+  width: 100%;
+  max-width: 960px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.resultado .conteudo .logo {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+.resultado .conteudo .logo img {
+  display: block;
+  width: 100%;
+}
+
+.resultado .conteudo h1 {
+  font-family: "DM Serif Display", serif;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  display: block;
+  letter-spacing: 0.7px;
+}
+
+.resultado .conteudo h1 b {
+  font-weight: 400;
+}
+
+.resultado .conteudo h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+  font-family: "Tinos", serif;
+}
+
+.resultado .conteudo h2 b {
+  font-weight: 400;
+  color: #f3c127;
+}
+
+.resultado .salvar {
+  width: 280px;
+  display: flex;
+  height: 60px;
+  border: solid 1px #fff;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+}
+.resultado .salvar::after {
+  content: "";
+  background-color: #f3c127;
+  height: 3px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.resultado .salvar .icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60px;
+  border-radius: 8px 0 0 8px;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+.resultado .salvar .texto {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 250ms ease-in-out;
+  border-radius: 0 8px 8px 0;
+}
+.resultado .salvar:hover .texto {
+  background-color: #fff;
+  color: #d44522;
+}
+
+.resultado .novo {
+  display: block;
+  margin: auto;
+  width: 200px;
+  color: #f3c127;
+  font-family: "Tinos", serif;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin-top: 50px;
+  font-size: 14px;
+}
+.resultado .novo::before {
+  width: 40px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  background-color: #f3c127;
+  transform: translateX(-100%) translateY(-50%);
+}
+.resultado .novo::before {
+  width: 40px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  background-color: #f3c127;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.resultado .novo::after {
+  width: 40px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: "";
+  background-color: #f3c127;
+  transform: translateX(100%) translateY(-50%);
+}
+
+.resultado .novo:hover {
+  color: #fff;
+}
+
+.preview {
+  display: block;
+  margin: 40px auto;
+  width: 400px;
+}
+
+.erro {
+  background-color: #fff !important;
+}
+
+@media (max-width: 1220px) {
+  .capao .conteudo .esquerda {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .capao .conteudo h1 {
+    font-size: 30px;
+  }
+  .capao .conteudo h2 {
+    font-size: 16px;
+  }
+  .capao .conteudo h2 br {
+    display: none;
+  }
+  .capao .conteudo .logo {
+    margin: auto;
+  }
+  .pagina1.detalhe1 {
+    display: none;
+  }
+  .capao .conteudo .iniciar {
+    margin: 20px auto;
+  }
+  .renas.pagina1 {
+    opacity: 0.8;
+  }
+  .opcoes .conteudo {
+    flex-flow: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .opcoes .conteudo .topo {
+    flex-flow: column-reverse;
+  }
+  .opcoes .conteudo .logo {
+    flex-basis: 100%;
+  }
+  .opcoes .conteudo .logo img {
+    width: 250px;
+    display: block;
+    margin: auto;
+  }
+  .opcoes .conteudo .titulo {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .opcoes .conteudo .itens .item .texto .nome {
+    font-size: 25px;
+  }
+
+  .opcoes .conteudo .itens {
+    overflow: auto;
+    justify-content: flex-start;
+  }
+  .formulario .conteudo form .campos .campo {
+    width: 100%;
+  }
+  .pagina .conteudo {
+    padding: 10px;
+  }
+  .renas2 {
+    opacity: 0.8;
+    display: none !important;
+  }
+  .opcoes .conteudo .itens .item .texto {
+    top: 65%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+  .opcoes .conteudo .itens .item::before {
+    display: none;
+  }
+  .detalhe3 {
+    display: none !important;
+  }
+  .formulario .conteudo form .gerar::after {
+    display: none !important;
+  }
+  .formulario .conteudo form .voltar::after {
+    display: none !important;
+  }
+  .formulario .conteudo form .gerar,
+  .formulario .conteudo form .voltar {
+    width: 46%;
+  }
+  .resultado .conteudo h1 {
+    font-size: 30px;
+  }
+  .preview {
+    width: 100%;
+  }
+  .resultado .conteudo h2 {
+    font-size: 16px;
+  }
+  .detalhe-resultado {
+    display: none !important;
+  }
+  .resultado {
+    margin-top: 30px;
+  }
+  .opcoes .conteudo .itens .item {
+    height: 390px;
+    background-position: top;
+    width: 60%;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  textarea {
+    height: 100px !important;
+  }
+
+  .itens a {
+    overflow: hidden;
+  }
+}
